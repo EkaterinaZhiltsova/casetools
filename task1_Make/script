@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Выберите одну из следующих целей для make:"
+
+awk -F: ' /':'/ {print $1}' Makefile
+
+# awk -F'\t' ' /':'/ {print $2}' Makefile
